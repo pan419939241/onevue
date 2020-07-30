@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                println "Test"
+                sh 'npm run test'
             }
         }
         stage('Deploy') {
