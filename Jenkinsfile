@@ -11,7 +11,7 @@ pipeline {
                 bat 'npm run test'
             script{
              allure([
-             includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+             includeProperties: false, jdk: '', results: [[path: 'cypress/reports']]
              ])
              }
             }
